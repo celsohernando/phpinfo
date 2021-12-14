@@ -1,0 +1,19 @@
+apiVersion: v1
+Kind: Pod
+metadata: 
+  name: phinfo-po
+spec:
+  containers:
+    -
+      args:
+      command:
+      env:
+      image:
+      name:
+      ports:
+      volumeMouints:
+      workingDir:
+      
+  initContainers:
+  volumes:
+  
