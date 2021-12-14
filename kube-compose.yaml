@@ -6,14 +6,70 @@ spec:
   containers:
     -
       args:
+        - -f
+        - /src/index.php
+        - S
+        - 0.0.0.0:8080
       command:
+        - php
       env:
-      image:
-      name:
-      ports:
-      volumeMouints:
-      workingDir:
+        - 
+          name:
+          value:
+      image: php:apache
+      name: phpinfo-container
+      ports: 
+        - 
+          containerPort:
+          name:
+          protocol:
+      volumeMounts:
+        -
+          mountPath:
+          name:
+          readonly:
+          subPath:
+      workingDir: /src/
       
   initContainers:
+      -
+      args:
+        - -f
+        - /src/index.php
+        - S
+        - 0.0.0.0:8080
+      command:
+        - php
+      env:
+        - 
+          name:
+          value:
+      image: php:apache
+      name: phpinfo-container
+      ports: 
+        - 
+          containerPort:
+          name:
+          protocol:
+      volumeMounts:
+        -
+          mountPath:
+          name:
+          readonly:
+          subPath:
+      workingDir: /src/
+      
   volumes:
+    -
+      name:
+      configMap:
+      
+    -
+      name:
+      emptyDir:
+      
+    -
+      persistentVolumeClaim:
+      name:
+      
   
